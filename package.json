@@ -21,6 +21,7 @@
     "@remotion/player": "4.0.319",
     "@remotion/preload": "4.0.319",
     "@remotion/renderer": "4.0.319",
+    "@remotion/shapes": "4.0.319",
     "@remotion/tailwind-v4": "4.0.319",
     "@remotion/transitions": "4.0.319",
     "@remotion/zod-types": "4.0.319",
