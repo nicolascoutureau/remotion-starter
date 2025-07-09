@@ -5,12 +5,9 @@
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
-  "engines": {
-    "bun": ">=1.0.0"
-  },
   "packageManager": "bun@1.0.0",
   "dependencies": {
-    "@remotion/animation-utils": "4.0.32",
+    "@remotion/animation-utils": "4.0.322",
     "@remotion/cli": "4.0.323",
     "@remotion/fonts": "4.0.323",
     "@remotion/gif": "4.0.323",
@@ -46,7 +43,6 @@
     "typescript": "5.7.2"
   },
   "scripts": {
-    "preinstall": "npx only-allow bun",
     "dev": "remotion studio",
     "build": "remotion bundle",
     "lint:fix": "eslint src --fix; tsc --noEmit",
