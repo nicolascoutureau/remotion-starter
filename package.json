@@ -51,6 +51,10 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
+    "lint:fix": "eslint src --fix; tsc --noEmit",
+    "fix": "prettier --write src && eslint src --fix --fix-type problem,suggestion,layout; tsc --noEmit",
+    "fix:all": "prettier --write . && eslint . --fix --fix-type problem,suggestion,layout",
+    "format": "prettier --write src",
     "type-check": "tsc --noEmit"
   },
   "sideEffects": [

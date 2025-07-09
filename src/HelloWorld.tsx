@@ -1,28 +1,15 @@
-import {
-  AbsoluteFill,
-  interpolate,
-  useCurrentFrame,
-  useVideoConfig,
-} from "remotion";
-import { TextAnimation } from "./examples/textAnimation";
+import { AbsoluteFill } from "remotion";
+import { TextAnimation } from "./baseComponents/textAnimation";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 
 export const HelloWorld: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
-
-  const opacity = interpolate(frame, [0, durationInFrames], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-
   return (
     <AbsoluteFill className="flex items-center justify-center bg-white">
       <TextAnimation
         text={
           <>
-            HELLO <span className="text-red-500 font-light">WeBuild</span>
+            Hello from <span className="text-red-500 font-light">WeBuild</span>
           </>
         }
         createTimeline={({ textRef, tl }) => {
@@ -66,14 +53,6 @@ export const HelloWorld: React.FC = () => {
           return tl;
         }}
       />
-      <h1
-        style={{
-          opacity,
-        }}
-        className="text-4xl font-bold"
-      >
-        Hello World
-      </h1>
     </AbsoluteFill>
   );
 };
