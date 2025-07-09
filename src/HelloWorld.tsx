@@ -1,7 +1,7 @@
 import { AbsoluteFill } from "remotion";
-import { TextAnimation } from "./baseComponents/textAnimation";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import { TextAnimation } from "./baseComponents/textAnimation";
 
 export const HelloWorld: React.FC = () => {
   return (
