@@ -44,7 +44,6 @@
   },
   "scripts": {
     "dev": "remotion studio",
-    "build": "remotion bundle",
     "lint:fix": "eslint src --fix; tsc --noEmit",
     "fix": "prettier --write src && eslint src --fix --fix-type problem,suggestion,layout; tsc --noEmit",
     "fix:all": "prettier --write . && eslint . --fix --fix-type problem,suggestion,layout",
