@@ -5,6 +5,10 @@
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "packageManager": "bun@1.0.0",
   "dependencies": {
     "@remotion/animation-utils": "4.0.323",
     "@remotion/cli": "4.0.323",
@@ -41,6 +45,7 @@
     "typescript": "5.8.2"
   },
   "scripts": {
+    "preinstall": "npx only-allow bun",
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
