@@ -9,7 +9,8 @@ export const HelloWorld: React.FC = () => {
       <TextAnimation
         text={
           <>
-            Hello from <span className="text-red-500 font-light">WeBuild</span>
+            Welcome to{" "}
+            <span className="text-green-400 font-light">Motionable</span>
           </>
         }
         createTimeline={({ textRef, tl }) => {
