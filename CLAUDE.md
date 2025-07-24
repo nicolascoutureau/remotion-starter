@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-**Start development server (Remotion Studio):**
+**Start develpackageManager": "bun@1.0.0",opment server (Remotion Studio):**
 
 ```bash
 npm run dev
@@ -85,11 +85,13 @@ The project defines compositions in `src/Root.tsx`:
 ### GSAP Integration
 
 The project uses a custom `useGsapTimeline` hook that:
+
 - Syncs GSAP timeline playback with Remotion's frame progression
 - Provides proper cleanup with `gsap.context()`
 - Enables complex animations while maintaining Remotion's deterministic rendering
 
 Example pattern:
+
 ```typescript
 const tl = gsap.timeline();
 tl.to(target, { opacity: 1, duration: 1 });
